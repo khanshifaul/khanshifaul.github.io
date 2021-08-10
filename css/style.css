@@ -1,4 +1,5 @@
-* {
+*. body {
+  font-family: "Ubuntu", sans-serif;
 }
 
 :root {
@@ -8,6 +9,11 @@
 }
 
 .hero {
+  font-weight: 400;
+}
+
+.hero-line {
+  font-family: "Acme", sans-serif;
 }
 
 .skills {

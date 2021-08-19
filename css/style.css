@@ -1,8 +1,16 @@
-*. body {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: "Ubuntu", sans-serif;
 }
 
 :root {
+}
+
+.container {
 }
 
 .header-content {
@@ -27,3 +35,53 @@
 
 .footer-content {
 }
+
+/* Background */
+.bg-light {
+}
+
+.bg-dark {
+}
+
+/* Button */
+.btn {
+}
+
+.btn-light {
+}
+
+.btn-dark {
+}
+
+/* Navigation */
+
+nav.navbar {
+}
+
+a.navbar-brand {
+}
+
+.navbar-toggler {
+}
+
+ul.navbar-nav {
+}
+
+li.nav-item {
+  list-style: none;
+}
+
+a.nav-link {
+  text-decoration: none;
+}
+
+/* Margin */
+m-0 {
+  margin: 0 !important;
+}
+
+m-1 {
+  margin: 0.1em !important;
+}
+
+/* Padding */

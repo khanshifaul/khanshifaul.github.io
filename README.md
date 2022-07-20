@@ -1,6 +1,7 @@
 # README.md
 
-This [Website](https://khanshifaul.github.io/) represent myself.
+This [Website](https://khanshifaul.github.io/) tells about me. 
+My Passions, Jobs, Life Story are shared here. 
 
 ## HOME PAGE
 

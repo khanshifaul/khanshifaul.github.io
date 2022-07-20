@@ -1,6 +1,6 @@
 # README.md
 
-This [Website] (https://khanshifaul.github.io/) represent myself.
+This [Website](https://khanshifaul.github.io/) represent myself.
 
 ## HOME PAGE
 

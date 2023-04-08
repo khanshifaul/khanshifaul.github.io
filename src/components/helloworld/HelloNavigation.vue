@@ -2,7 +2,7 @@
     <div class="header-content border-bottom">
         <nav class="navbar navbar-expand-md">
             <div class="container-xl">
-                <router-link class="navbar-brand neon-light" :to="{ name: 'home' }">KhanShifaul</router-link>
+                <router-link class="navbar-brand neon-light" :to="{ name: 'home' }">&ltcc; KhanShifaul &gtcc;</router-link>
                 <div class="d-md-flex" v-show="!mobile">
                     <ul class="navbar-nav me-auto mb-lg-0 flex">
                         <li class="nav-item">

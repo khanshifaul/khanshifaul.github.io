@@ -1,0 +1,89 @@
+@import './base.css';
+@import '/fonts/fonts.css';
+
+section {
+    padding: 1rem 0;
+}
+
+.section-title {
+    font-family: 'Broadway BT', sans-serif
+}
+
+.neon {
+    background: linear-gradient(60deg, #9308f7, #f87c08, #110a0a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.neon-light {
+    background: linear-gradient(60deg, rgb(147, 8, 247), rgb(248, 124, 8), rgb(255, 255, 255));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.btn {
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700
+}
+
+.btn-light {
+    color: #212529
+}
+
+.btn-dark {
+    color: #f8f9fa
+}
+
+m-0 {
+    margin: 0 !important
+}
+
+m-1 {
+    margin: .1rem !important
+}
+
+.ql-container .ql-editor {
+    min-height: 50vh;
+}
+
+.ql-toolbar {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+
+.glow {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 3px 15px #8A3FFC;
+    }
+
+    to {
+        text-shadow: 0 0 15px #fff, 0 5px 25px #8A3FFC;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .vue-pdf-embed canvas {
+        height: auto !important;
+        width: 100vw !important;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .vue-pdf-embed canvas {
+        height: 100vh !important;
+        width: auto !important;
+    }
+}

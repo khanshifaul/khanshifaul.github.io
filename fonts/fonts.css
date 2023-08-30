@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Acme";
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("Acme"), url("/fonts/acme/acme.woff2") format("woff2"), url("/fonts/acme/acme.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Bacode";
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("Bacode"), url("/fonts/bacode/bacode.woff2") format("woff2"), url("/fonts/bacode/bacode.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Broadway BT";
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("Broadway BT"), url("/fonts/broadway-bt/broadway-bt.woff2") format("woff2"), url("/fonts/broadway-bt/broadway-bt.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Greenhouse Gas";
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("Greenhouse Gas"), url("/fonts/greenhouse-gas/greenhouse-gas.woff2") format("woff2"), url("/fonts/greenhouse-gas/greenhouse-gas.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Quick Starter";
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("Quick Starter"), url("/fonts/quick-starter/quick-starter.woff2") format("woff2"), url("/fonts/quick-starter/quick-starter.woff") format("woff");
+}

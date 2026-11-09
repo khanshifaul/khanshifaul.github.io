@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="mBAfAJ3Vz92iCZfG3-1rwX8HslbiYgDxDG2Jy6LChrM">
+  <title>Khan Shifaul Islam — shifaul.dev</title>
+  <link rel="canonical" href="https://www.shifaul.dev/">
+  <meta http-equiv="refresh" content="0; url=https://www.shifaul.dev/">
+  <script>
+    (function () {
+      var BASE = 'https://www.shifaul.dev';
+      var path = window.location.pathname.replace(/\/+$/, '') || '/';
+
+      // Known old routes -> their home on the new site.
+      var routes = {
+        '/resume': '/resume',
+        '/blog': '/blog',
+        '/contact': '/contact',
+        '/about': '/about',
+        '/work': '/portfolio',
+        '/portfolio': '/portfolio',
+        '/service': '/service',
+        '/terms': '/terms',
+        '/login': '/sign-in',
+        '/signin': '/sign-in',
+        '/sign-in': '/sign-in',
+        '/sign-up': '/sign-up',
+        '/signup': '/sign-up',
+        '/admin': '/admin',
+        '/admin/dashboard': '/admin',
+        '/admin/inbox': '/admin',
+        '/admin/post': '/admin',
+        '/admin/setting': '/admin'
+      };
+
+      var target = BASE + '/';
+      if (routes[path]) {
+        target = BASE + routes[path];
+      } else if (path.indexOf('/blog/') === 0) {
+        // Old blog slugs do not map 1:1 to the new ones; land on the index.
+        target = BASE + '/blog';
+      } else if (path.indexOf('/admin/') === 0) {
+        target = BASE + '/admin';
+      }
+
+      var canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical) canonical.setAttribute('href', target);
+
+      var meta = document.createElement('meta');
+      meta.httpEquiv = 'refresh';
+      meta.content = '0; url=' + target;
+      document.head.appendChild(meta);
+
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <p>This site has moved to <a href="https://www.shifaul.dev/">shifaul.dev</a>.</p>
+</body>
+</html>

@@ -1,48 +1,27 @@
-# README.md
+# khanshifaul.github.io → shifaul.dev
 
-This [Website](https://khanshifaul.github.io/) tells about me. 
-My Passions, Jobs, Life Story are shared here. 
+This repository no longer hosts a site. All traffic is redirected to the current
+portfolio at **https://shifaul.dev/**.
 
-## Recommended IDE Setup
+## How it works
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+GitHub Pages serves the `gh-pages` branch. That branch now contains only
+static redirect pages:
 
-## Customize configuration
+- `index.html` → `https://shifaul.dev/`
+- `404.html` → maps old deep links (resume, blog, contact, login, admin, …) to
+  their closest page on the new site
+- `resume/`, `blog/`, `contact/`, `about/`, `work/`, `login/`, `admin/` →
+  fixed redirects to the matching page
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+GitHub Pages cannot send an HTTP `301`, so the redirect uses
+`<link rel="canonical">`, a zero-delay `<meta http-equiv="refresh">`, and a
+JavaScript `location.replace()` fallback.
 
-## Project Setup
+## Changing the redirect target
 
-```sh
-npm install
-```
+Edit the files on the `gh-pages` branch. Do **not** re-run the old Vue build or
+push the old site back to `gh-pages`.
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
-
-
-## HOME PAGE
-
-## CV
-
-## BLOG
-
-## CONTACT
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+The `main` branch keeps a copy of the redirect files under `public/` for
+reference; the former Vue source is retained only in git history.
